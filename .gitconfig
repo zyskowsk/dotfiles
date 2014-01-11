@@ -1,0 +1,7 @@
+[user]
+	name = Rob Zyskowski
+	email = zyskowski.rob@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = auto
