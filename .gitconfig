@@ -1,0 +1,31 @@
+[user]
+	    name = Rob Zyskowski
+	    email = zyskowski.rob@gmail.com
+
+[core]
+	    editor = vim
+
+[color]
+        ui = true
+        interactive = true
+
+[color "status"]
+        added = green bold
+        changed = red bold
+        untracked = cyan
+
+[color "diff"]
+        meta = cyan bold
+        old = red bold
+        new = green bold
+        frag = white
+        commit = yellow
+
+[color "branch"]
+        current = green bold
+        local = bold
+        remote = red bold
+
+[color "grep"]
+        match = cyan
+
