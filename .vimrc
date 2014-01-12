@@ -41,6 +41,7 @@ set expandtab
 """" Coding
 set history=100							" 100 Lines of history
 set showfulltag							" Show more information while completing tags
+filetype on
 filetype plugin on						" Enable filetype plugins
 filetype plugin indent on				" Let filetype plugins indent for me
 syntax enable								" Turn on syntax highlighting
