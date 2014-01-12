@@ -54,7 +54,7 @@ function prompt_command {
         untracked_files=""
     fi
 
-    export PS1="${cyan}[\u][\w]${git_color}\$(current_git_branch)${cached_files}${untracked_files}${NC}\n${white}: "
+    export PS1="${cyan}[\u][\w]${git_color}\$(current_git_branch)${cached_files}${untracked_files}${NC}\n${white}> "
 }
 
 PROMPT_COMMAND=prompt_command
