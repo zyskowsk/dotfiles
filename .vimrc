@@ -1,6 +1,7 @@
 syntax on
 set t_Co=256
-colorscheme darkocean 
+set background=dark
+colorscheme lucius
 
 set autoindent
 set expandtab

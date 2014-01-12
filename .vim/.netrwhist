@@ -1,6 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/rob/dotfiles'
 let g:netrw_dirhist_2='/Users/rob/analytics/media'
 let g:netrw_dirhist_3='/Users/rob/analytics/media/css'
 let g:netrw_dirhist_4='/Users/rob/analytics/media/css/flow'
+let g:netrw_dirhist_5='/Users/rob/analytics'
+let g:netrw_dirhist_6='/Users/rob/analytics/.ssh'
+let g:netrw_dirhist_7='/Users/rob/analytics'
+let g:netrw_dirhist_8='/Users/rob/analytics/backend'
