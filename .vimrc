@@ -1,7 +1,7 @@
 syntax on
 set t_Co=256
-colorscheme 3dglasses 
- 
+colorscheme darkocean 
+
 set autoindent
 set expandtab
 set smarttab
