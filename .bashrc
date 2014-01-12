@@ -61,3 +61,8 @@ PROMPT_COMMAND=prompt_command
 
 # Don't match .pyc files when tab-completing in bash
 export FIGNORE=$FIGNORE:.pyc
+
+# Load .bash_local if it exists
+if [ -f ~/.bash_local ]; then
+    . ~/.bash_local
+fi
