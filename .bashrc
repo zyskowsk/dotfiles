@@ -48,7 +48,7 @@ function prompt_command {
     fi
  
     # Check for untracked files
-    if [[ $(git ls-files --exclude-standard --other 2> /dev/null | cat) != "" ]]; then
+    if [[ $(git ls-files --exclude-standard --others 2> /dev/null | cat) != "" ]]; then
         untracked_files="${cyan} ●"
     else
         untracked_files=""
