@@ -1,6 +1,6 @@
 syntax on
 set t_Co=256
-colorscheme darkburn 
+colorscheme 3dglasses 
  
 set autoindent
 set expandtab
