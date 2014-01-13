@@ -29,3 +29,5 @@
 [color "grep"]
         match = cyan
 
+[alias]
+        cdiff = diff --cached
