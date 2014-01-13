@@ -30,4 +30,5 @@
         match = cyan
 
 [alias]
-        cdiff = diff --cached
+    cdiff = diff --cached
+    nb = checkout -b
