@@ -66,5 +66,3 @@ export FIGNORE=$FIGNORE:.pyc
 if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
