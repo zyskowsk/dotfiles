@@ -20,15 +20,15 @@ BOLD='\[\e[1m\]'
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-## Get git branch
-function current_git_branch {
-    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ [\1]/"
-}
-
 # reload bashrc
 function reload_bashrc {
     source ~/.bashrc
     echo "bash reloaded."
+}
+
+## Get git branch
+function current_git_branch {
+    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ [\1]/"
 }
 
 # Build prompt
@@ -41,20 +41,23 @@ function prompt_command {
     fi
 
     # Check for staged files
+    cached_files=""
     if [[ $(git diff-index --cached HEAD 2> /dev/null | cat) != "" ]]; then
         cached_files="${green} ●"
-    else
-        cached_files=""
     fi
  
     # Check for untracked files
+    untracked_files=""
     if [[ $(git ls-files --exclude-standard --others 2> /dev/null | cat) != "" ]]; then
         untracked_files="${cyan} ●"
-    else
-        untracked_files=""
     fi
 
-    export PS1="${cyan}[\u${green}@${cyan}\h][${green}\w${cyan}]${git_color}\$(current_git_branch)${cached_files}${untracked_files}${NC}\n${white}> "
+    virtual_env=""
+    if [[ $VIRTUAL_ENV ]]; then
+        virtual_env="${grey}(`basename $VIRTUAL_ENV`)${grey} "
+    fi
+
+    export PS1="${virtual_env}${cyan}[\u${green}@${cyan}\h][${green}\w${cyan}]${git_color}\$(current_git_branch)${cached_files}${untracked_files}${NC}\n${white}> "
 }
 
 PROMPT_COMMAND=prompt_command
@@ -62,7 +65,4 @@ PROMPT_COMMAND=prompt_command
 # Don't match .pyc files when tab-completing in bash
 export FIGNORE=$FIGNORE:.pyc
 
-# Load .bash_local if it exists
-if [ -f ~/.bash_local ]; then
-    . ~/.bash_local
-fi
+alias activate='. env/bin/activate'
