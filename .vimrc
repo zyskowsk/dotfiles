@@ -12,6 +12,7 @@ set wildmode=longest,list
 
 set mouse=a
 
+
 """" Searching and Patterns
 set ignorecase							" search is case insensitive
 set smartcase							" search case sensitive if caps on 
@@ -65,3 +66,6 @@ map :tn :tabnew
 cmap rmw %s/\s\+$//g 
 " Convert CSS to JS dict formatting
 cmap cj s/\(\s*\)\(\S\)\(.*\):\s*\(.*\);/\1'\2\3': '\4',/g
+
+"""" Theme
+"colorscheme lucius
