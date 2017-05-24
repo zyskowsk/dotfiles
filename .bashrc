@@ -64,5 +64,7 @@ PROMPT_COMMAND=prompt_command
 
 # Don't match .pyc files when tab-completing in bash
 export FIGNORE=$FIGNORE:.pyc
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 alias activate='. env/bin/activate'

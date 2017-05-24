@@ -69,3 +69,6 @@ cmap cj s/\(\s*\)\(\S\)\(.*\):\s*\(.*\);/\1'\2\3': '\4',/g
 
 """" Theme
 "colorscheme lucius
+"
+
+execute pathogen#infect()

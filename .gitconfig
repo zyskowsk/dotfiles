@@ -32,3 +32,6 @@
 [alias]
     cdiff = diff --cached
     nb = checkout -b
+
+[pull]
+    ff = only
