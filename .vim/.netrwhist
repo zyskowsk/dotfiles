@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/rob/Projects/alan-web/web/compiled'
 let g:netrw_dirhist_2='/Users/rob/Projects/alan-web/web/main/sass/uikit'
 let g:netrw_dirhist_3='/Users/rob/Projects/alan-web/web/main/sass/uikit/comp'
 let g:netrw_dirhist_4='/Users/rob/dotfiles/.vim/autoload'
 let g:netrw_dirhist_5='/Users/rob/dotfiles'
+let g:netrw_dirhist_6='/Users/rob/Projects/alan-web/node_modules'
